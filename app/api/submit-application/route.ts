@@ -3,7 +3,7 @@ import { NextResponse } from "next/server"
 export async function POST(request: Request) {
   const formData = await request.json()
   const webhookUrl =
-    "https://discord.com/api/v10/webhooks/1339337352178569354/8GF5NuqSYHsCRD75f1DGJphPushjq-nnBKTJybLBWBjuawtPeNDZck56Un3_VGnOCqOA"
+    "https://discord.com/api/v10/webhooks/1339392792794890310/oo3GybSwB0AxDfDaHvgcq-J2gBRSZahSnoSQreULXj_2CcIKzh-j9crGNZ8HgtbmDiDq"
 
   if (!webhookUrl) {
     return NextResponse.json({ error: "Webhook URL not configured" }, { status: 500 })
