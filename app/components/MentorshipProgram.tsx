@@ -4,18 +4,18 @@ import { Button } from "@/components/ui/button"
 
 export default function MentorshipProgram() {
   return (
-    <div className="bg-gray-800" id="mentorship">
+    <div className="bg-secondary" id="mentorship">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8">
         <div className="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
           <div>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-white">Global Gains Inner Circle</h2>
-            <p className="mt-3 max-w-3xl text-lg text-gray-300">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground">Global Gains Inner Circle</h2>
+            <p className="mt-3 max-w-3xl text-lg text-muted-foreground">
               Elevate your trading skills with our exclusive mentorship program. Learn directly from experienced traders
               and receive personalized guidance to accelerate your growth.
             </p>
             <div className="mt-8">
               <Link href="/inner-circle" passHref>
-                <Button size="lg" className="w-full sm:w-auto bg-green-500 text-white hover:bg-green-600">
+                <Button size="lg" className="w-full sm:w-auto bg-primary text-primary-foreground hover:bg-primary/90">
                   Join Now
                 </Button>
               </Link>
@@ -36,4 +36,3 @@ export default function MentorshipProgram() {
     </div>
   )
 }
-

@@ -10,7 +10,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="bg-gray-900 text-white shadow-sm">
+    <header className="bg-background text-foreground shadow-sm border-b border-border sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
@@ -22,7 +22,7 @@ export default function Header() {
                 height={32}
                 className="h-8 w-auto sm:h-10 transition-transform duration-300 group-hover:scale-110"
               />
-              <span className="ml-2 text-xl font-bold transition-colors duration-300 group-hover:text-green-400">
+              <span className="ml-2 text-xl font-bold transition-colors duration-300 group-hover:text-primary">
                 Global Gains
               </span>
             </Link>
@@ -30,7 +30,7 @@ export default function Header() {
           <div className="hidden md:flex space-x-10">
             <Link
               href="/inner-circle"
-              className="text-base font-medium text-gray-300 hover:text-white transition-colors duration-300 hover:scale-105 transform"
+              className="text-base font-medium text-foreground hover:text-primary transition-colors duration-300 hover:scale-105 transform"
             >
               Inner Circle
             </Link>
@@ -51,7 +51,7 @@ export default function Header() {
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <Link
               href="/inner-circle"
-              className="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 transition-colors duration-300"
+              className="block px-3 py-2 text-base font-medium text-foreground hover:text-primary hover:bg-secondary transition-colors duration-300"
             >
               Inner Circle
             </Link>
@@ -61,4 +61,3 @@ export default function Header() {
     </header>
   )
 }
-

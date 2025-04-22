@@ -37,14 +37,14 @@ const traders = [
       {
         name: "Instagram",
         icon: Instagram,
-        href: "https://www.instagram.com/samuel.santrich?igsh=MXAweWtnamlnY2Freg==",
-        username: "@samuel.santrich",
+        href: "https://www.instagram.com/fxsamu_",
+        username: "@fxsamu_",
       },
       {
         name: "TikTok",
         icon: TikTok,
-        href: "https://www.tiktok.com/@reviews.samu?_t=ZP-8sxoOg2AT0R&_r=1",
-        username: "@reviews.samu",
+        href: "https://www.tiktok.com/@samutrades",
+        username: "@samutrades",
       },
     ],
   },
@@ -52,12 +52,15 @@ const traders = [
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900">
+    <footer className="bg-background">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {traders.map((trader) => (
-            <div key={trader.name} className="space-y-4">
-              <h3 className="text-lg font-semibold text-white">{trader.name}</h3>
+          {traders.map((trader, index) => (
+            <div
+              key={trader.name}
+              className={`space-y-4 ${trader.name === "SamuTrades" ? "order-first md:order-none" : ""}`}
+            >
+              <h3 className="text-lg font-semibold text-foreground">{trader.name}</h3>
               <div className="flex flex-col space-y-4">
                 {trader.socials.map((social) => (
                   <Link
@@ -65,19 +68,19 @@ export default function Footer() {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center space-x-2 text-gray-400 hover:text-gray-300 transition-colors"
+                    className="flex items-center space-x-2 text-muted-foreground hover:text-foreground transition-colors"
                   >
                     <social.icon className="h-5 w-5" />
                     <span>{social.name}</span>
-                    <span className="text-sm text-gray-500">{social.username}</span>
+                    <span className="text-sm text-muted-foreground">{social.username}</span>
                   </Link>
                 ))}
               </div>
             </div>
           ))}
         </div>
-        <div className="mt-8 border-t border-gray-800 pt-8">
-          <p className="text-center text-base text-gray-400">
+        <div className="mt-8 border-t border-border pt-8">
+          <p className="text-center text-base text-muted-foreground">
             &copy; {new Date().getFullYear()} Global Gains, Inc. All rights reserved.
           </p>
         </div>
@@ -85,4 +88,3 @@ export default function Footer() {
     </footer>
   )
 }
-

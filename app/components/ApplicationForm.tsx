@@ -56,13 +56,32 @@ export default function ApplicationForm() {
     setIsSubmitting(true)
     setSubmitMessage("")
 
+    const webhookUrl =
+      "https://discord.com/api/v10/webhooks/1339392792794890310/oo3GybSwB0AxDfDaHvgcq-J2gBRSZahSnoSQreULXj_2CcIKzh-j9crGNZ8HgtbmDiDq"
+
+    const message = {
+      embeds: [
+        {
+          title: "Samu's Mentorship Application",
+          fields: [
+            { name: "Full Name", value: formData.fullName },
+            { name: "Phone Number", value: formData.phoneNumber },
+            { name: "Email", value: formData.email },
+            { name: "Instagram Username", value: formData.instagramUsername },
+            { name: "Why Good Fit", value: formData.whyGoodFit },
+          ],
+          color: 5763719, // Green color
+        },
+      ],
+    }
+
     try {
-      const response = await fetch("/api/submit-application", {
+      const response = await fetch(webhookUrl, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(message),
       })
 
       if (response.ok) {
@@ -92,7 +111,6 @@ export default function ApplicationForm() {
         setCurrentField(currentField + 1)
       }
     } else {
-      // Show an error message or handle invalid input
       alert("Please fill in this field before proceeding.")
     }
   }
@@ -114,7 +132,7 @@ export default function ApplicationForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="w-full max-w-lg mx-auto bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-xl shadow-2xl border border-gray-700"
+      className="w-full max-w-lg mx-auto bg-background p-8 rounded-xl shadow-2xl border border-border"
     >
       <div className="mb-8">
         <h2 className="text-3xl font-bold text-white mb-2">Join Global Gains Inner Circle</h2>
@@ -218,4 +236,3 @@ export default function ApplicationForm() {
     </form>
   )
 }
-

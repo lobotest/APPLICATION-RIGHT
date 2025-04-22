@@ -1,24 +1,25 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import WhopIcon from "./WhopIcon"
 
 export default function CTA() {
   return (
-    <div className="bg-green-600">
+    <div className="bg-primary">
       <div className="max-w-2xl mx-auto text-center py-12 px-4 sm:py-16 sm:px-6 lg:px-8">
-        <h2 className="text-2xl sm:text-3xl font-extrabold text-white">
+        <h2 className="text-2xl sm:text-3xl font-extrabold text-primary-foreground">
           <span className="block">Ready to start your trading journey?</span>
           <span className="block mt-2">Join Global Gains today.</span>
         </h2>
-        <p className="mt-4 text-base sm:text-lg leading-6 text-green-200">
-          Get access to our Discord community, real-time market insights, and our exclusive mentorship program.
+        <p className="mt-4 text-base sm:text-lg leading-6 text-primary-foreground/80">
+          Get access to our community, real-time market insights, and our exclusive mentorship program.
         </p>
-        <Link href="https://discord.com/invite/globalgains" passHref>
-          <Button size="lg" className="mt-8 w-full sm:w-auto bg-white text-green-600 hover:bg-green-50">
-            Join Discord Now
+        <Link href="https://whop.com/discover/globalgains" passHref>
+          <Button size="lg" className="mt-8 w-full sm:w-auto bg-background text-foreground hover:bg-secondary">
+            <WhopIcon className="mr-2 h-5 w-5" />
+            Join Whop Now
           </Button>
         </Link>
       </div>
     </div>
   )
 }
-

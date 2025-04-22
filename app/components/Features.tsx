@@ -38,14 +38,14 @@ export default function Features() {
   }, [])
 
   return (
-    <div className="py-12 bg-gray-800" id="features">
+    <div className="py-12 bg-secondary" id="features">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center animate-fadeInUp">
-          <h2 className="text-base text-green-400 font-semibold tracking-wide uppercase">Features</h2>
-          <p className="mt-2 text-2xl sm:text-3xl leading-8 font-extrabold tracking-tight text-white">
+          <h2 className="text-base text-primary font-semibold tracking-wide uppercase">Features</h2>
+          <p className="mt-2 text-2xl sm:text-3xl leading-8 font-extrabold tracking-tight text-foreground">
             Elevate Your Trading Game
           </p>
-          <p className="mt-4 max-w-2xl text-lg sm:text-xl text-gray-400 lg:mx-auto">
+          <p className="mt-4 max-w-2xl text-lg sm:text-xl text-muted-foreground lg:mx-auto">
             Global Gains provides all the tools and resources you need to succeed in the trading world.
           </p>
         </div>
@@ -60,12 +60,12 @@ export default function Features() {
                 }`}
               >
                 <dt>
-                  <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-green-500 text-white transition-all duration-300 hover:scale-110 hover:rotate-3">
+                  <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-primary text-primary-foreground">
                     <feature.icon className="h-6 w-6" aria-hidden="true" />
                   </div>
-                  <p className="ml-16 text-lg leading-6 font-medium text-white">{feature.name}</p>
+                  <p className="ml-16 text-lg leading-6 font-medium text-foreground">{feature.name}</p>
                 </dt>
-                <dd className="mt-2 ml-16 text-base text-gray-400">{feature.description}</dd>
+                <dd className="mt-2 ml-16 text-base text-muted-foreground">{feature.description}</dd>
               </div>
             ))}
           </dl>
@@ -74,4 +74,3 @@ export default function Features() {
     </div>
   )
 }
-
