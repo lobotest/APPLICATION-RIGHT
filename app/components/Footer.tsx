@@ -43,8 +43,8 @@ const traders = [
       {
         name: "TikTok",
         icon: TikTok,
-        href: "https://www.tiktok.com/@samutrades",
-        username: "@samutrades",
+        href: "https://www.tiktok.com/@iamsamutradess",
+        username: "@iamsamutradess",
       },
     ],
   },
