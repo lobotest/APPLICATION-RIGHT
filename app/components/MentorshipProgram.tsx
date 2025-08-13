@@ -8,15 +8,15 @@ export default function MentorshipProgram() {
       <div className="max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8">
         <div className="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
           <div>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground">Global Gains Inner Circle</h2>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground">Funded University</h2>
             <p className="mt-3 max-w-3xl text-lg text-muted-foreground">
-              Elevate your trading skills with our exclusive mentorship program. Learn directly from experienced traders
-              and receive personalized guidance to accelerate your growth.
+              Join our exclusive trading education program. Get access to comprehensive courses, mentorship, and the
+              tools you need to become a funded trader.
             </p>
             <div className="mt-8">
-              <Link href="/inner-circle" passHref>
+              <Link href="/form" passHref>
                 <Button size="lg" className="w-full sm:w-auto bg-primary text-primary-foreground hover:bg-primary/90">
-                  Join Now
+                  Apply Now
                 </Button>
               </Link>
             </div>

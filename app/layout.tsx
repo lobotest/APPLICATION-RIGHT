@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Global Gains - Trading Community",
   description:
     "Join our thriving Discord community of traders. Get access to real-time market insights, expert analysis, and soon-to-come mentorship programs.",
-    generator: 'v0.dev'
+    generator: 'v0.app'
 }
 
 export default function RootLayout({

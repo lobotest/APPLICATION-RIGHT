@@ -29,10 +29,10 @@ export default function Header() {
           </div>
           <div className="hidden md:flex space-x-10">
             <Link
-              href="/inner-circle"
+              href="/form"
               className="text-base font-medium text-foreground hover:text-primary transition-colors duration-300 hover:scale-105 transform"
             >
-              Inner Circle
+              Funded University
             </Link>
           </div>
           <div className="md:hidden">
@@ -50,10 +50,10 @@ export default function Header() {
         <div className="md:hidden animate-fadeIn">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <Link
-              href="/inner-circle"
+              href="/form"
               className="block px-3 py-2 text-base font-medium text-foreground hover:text-primary hover:bg-secondary transition-colors duration-300"
             >
-              Inner Circle
+              Funded University
             </Link>
           </div>
         </div>
