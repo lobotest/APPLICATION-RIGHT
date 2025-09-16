@@ -6,7 +6,7 @@ import Link from "next/link"
 import WhopIcon from "./WhopIcon"
 
 export default function Hero() {
-  const heroText = "Master trading with Global Gains"
+  const heroText = "Master Trading with Samu Trades"
 
   return (
     <div className="bg-background">
@@ -18,8 +18,8 @@ export default function Hero() {
                 <span className="block xl:inline">{heroText}</span>
               </h1>
               <p className="mt-3 max-w-md mx-auto text-base sm:text-lg md:text-xl text-muted-foreground lg:mx-0">
-                Join our thriving community of traders. Get access to real-time market insights, expert analysis, and
-                soon-to-come mentorship programs.
+                Join our free daily live trading sessions. Get real-time market insights, proven strategies, and a
+                community built to help you win.
               </p>
               <div className="mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
@@ -38,11 +38,11 @@ export default function Hero() {
             <div className="mt-10 lg:mt-0 lg:w-1/2 animate-fadeInRight">
               <div className="flex justify-center lg:justify-end">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled%20design%20(47)-xfsln5ghbFiDqxNxzgKRIu8rTeTh1S.png"
-                  alt="Global Gains Discord Community Interface on iPhone"
-                  width={600}
-                  height={450}
-                  className="max-w-full h-auto object-contain rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 animate-float"
+                  src="/images/trading-phones-mockup.png"
+                  alt="Trading Community Mobile App - Live Trading Sessions and Discord Community"
+                  width={500}
+                  height={600}
+                  className="max-w-full h-auto object-contain transition-transform duration-300 hover:scale-105 animate-float"
                   priority
                 />
               </div>

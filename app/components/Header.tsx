@@ -16,14 +16,14 @@ export default function Header() {
           <div className="flex items-center">
             <Link href="/" className="flex items-center group">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled%20design-zUp2yd30LcwDnT0QcRka0XtjVsov8O.svg"
-                alt="Global Gains Logo"
-                width={32}
+                src="/images/funded-university-logo.jpg"
+                alt="Funded University Logo"
+                width={40}
                 height={32}
-                className="h-8 w-auto sm:h-10 transition-transform duration-300 group-hover:scale-110"
+                className="h-8 w-auto sm:h-10 transition-transform duration-300 group-hover:scale-110 rounded"
               />
               <span className="ml-2 text-xl font-bold transition-colors duration-300 group-hover:text-primary">
-                Global Gains
+                Samu Trades
               </span>
             </Link>
           </div>
