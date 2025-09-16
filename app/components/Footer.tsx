@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Twitter, Instagram, TwitterIcon as TikTok } from "lucide-react"
+import { Twitter, Instagram, TicketIcon as TikTok, Youtube } from "lucide-react"
 
 const traders = [
   {
@@ -8,20 +8,26 @@ const traders = [
       {
         name: "X (Twitter)",
         icon: Twitter,
-        href: "https://x.com/ginolopintojr?s=21&t=uFqOmb6FYWO2Sa1T0CvnFA",
-        username: "@ginolopintojr",
+        href: "https://x.com/imglotrades", // updated Twitter handle from imglotradesx to imglotrades
+        username: "@imglotrades", // updated username from @imglotradesx to @imglotrades
       },
       {
         name: "Instagram",
         icon: Instagram,
-        href: "https://www.instagram.com/ginolopintojr?igsh=ZGJpM2p1Yzl2MHlv&utm_source=qr",
-        username: "@ginolopintojr",
+        href: "https://www.instagram.com/glotradess",
+        username: "@glotradess",
       },
       {
         name: "TikTok",
         icon: TikTok,
-        href: "https://www.tiktok.com/@glotradesonly?_t=ZP-8sxoC0vNJfC&_r=1",
-        username: "@glotradesonly",
+        href: "https://www.tiktok.com/@glotradess",
+        username: "@glotradess",
+      },
+      {
+        name: "YouTube",
+        icon: Youtube,
+        href: "https://www.youtube.com/@glotrades",
+        username: "@glotrades",
       },
     ],
   },
@@ -31,8 +37,8 @@ const traders = [
       {
         name: "X (Twitter)",
         icon: Twitter,
-        href: "https://x.com/samuelsantrich?s=21&t=uFqOmb6FYWO2Sa1T0CvnFA",
-        username: "@samuelsantrich",
+        href: "https://x.com/samuelsantrichx",
+        username: "@samuelsantrichx",
       },
       {
         name: "Instagram",
