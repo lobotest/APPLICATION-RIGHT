@@ -38,11 +38,11 @@ export default function Hero() {
             <div className="mt-10 lg:mt-0 lg:w-1/2 animate-fadeInRight">
               <div className="flex justify-center lg:justify-end">
                 <Image
-                  src="/images/trading-phones-mockup.png"
-                  alt="Trading Community Mobile App - Live Trading Sessions and Discord Community"
-                  width={500}
-                  height={600}
-                  className="max-w-full h-auto object-contain transition-transform duration-300 hover:scale-105 animate-float"
+                  src="/images/funded-university-hero.jpg"
+                  alt="Funded University - Premium Trading Education Institution"
+                  width={600}
+                  height={400}
+                  className="max-w-full h-auto object-contain transition-transform duration-300 hover:scale-105 animate-float rounded-lg shadow-2xl"
                   priority
                 />
               </div>

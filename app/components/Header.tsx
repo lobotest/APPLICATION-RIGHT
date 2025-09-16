@@ -16,8 +16,8 @@ export default function Header() {
           <div className="flex items-center">
             <Link href="/" className="flex items-center group">
               <Image
-                src="/images/funded-university-logo.jpg"
-                alt="Funded University Logo"
+                src="/images/golden-globe-logo.jpg"
+                alt="Golden Globe Trading Logo"
                 width={40}
                 height={32}
                 className="h-8 w-auto sm:h-10 transition-transform duration-300 group-hover:scale-110 rounded"
